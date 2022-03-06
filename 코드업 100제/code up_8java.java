@@ -9,5 +9,5 @@ public class cdue {
 	}
 
 }
-//Âü°íÀÚ·á:https://memostack.tistory.com/108
-//ÄÚµå¾÷ 100Á¦:https://codeup.kr/problem.php?id=1008
+//ì°¸ê³ ìë£Œ:https://memostack.tistory.com/108
+//ì½”ë“œì—…ë¬¸ì œ:https://codeup.kr/problem.php?id=1008
