@@ -8,4 +8,4 @@ public class cdu {
 	}
 	
 }
-//Âü°íÀÚ·á:https://codeup.kr/problemsetsol.php
+//ì½”ë“œì—…ë¬¸ì œ:https://codeup.kr/problemsetsol.php
