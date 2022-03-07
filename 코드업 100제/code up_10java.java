@@ -10,4 +10,4 @@ public class cdu {
     }
 }
 
-//Âü°íÀÚ·á:https://codeup.kr/problem.php?id=1010
+//ì½”ë“œì—… 100ì œ:https://codeup.kr/problem.php?id=1010
