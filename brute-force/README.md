@@ -35,9 +35,16 @@ DFS(깊이 우선 탐색)
  완전탐색부분에서는 각각의 원소가 포함되거나, 포함되지 않는 두 가지 선택으로 구성되는 경우에 유용하게 사용이 가능하다
 ![다운로드 (4)](https://user-images.githubusercontent.com/100178951/159893814-48bf0f44-3e42-403c-a6fa-816e8d17d0ae.png)
 
-출처: https://rebro.kr/59 [Rebro의 코딩 일기장]
+순열(Permutation)
+=======
+완전 탐색의 대표적인 유형 서로 다른 N개를 일렬로 나열하는 순열의 경우의 수는 N! 이므로 완전 탐색을 이용하기 위해서는 N이 한자리 수 정도는 되어야 한다. 
+공식은 1,2,3,4를 예를들어서 정리하면 4*3*2*1로 되어서 4!가 되어야 하기때문이다  간단히 요약하면 서로 다른 것들 중 몇 개를 뽑아서 한 줄로 나열하는 것
+
+
+
  참고 자료 https://cano721.tistory.com/64
  https://developmentnotepad.tistory.com/entry/Algorithm-%EC%99%84%EC%A0%84%ED%83%90%EC%83%89-%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4-Exhaustive-Search
  https://rebro.kr/59
  https://crazykim2.tistory.com/591
  https://jeonggi.tistory.com/entry/JAVA-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0-%EC%99%84%EC%A0%84-%ED%83%90%EC%83%89
+ https://velog.io/@yoonjy1106/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%99%84%EC%A0%84-%EA%B2%80%EC%83%89Exhaustive-Search-%EC%88%9C%EC%97%B4%EC%A1%B0%ED%95%A9%EB%B6%80%EB%B6%84%EC%A7%91%ED%95%A9
