@@ -46,6 +46,8 @@
 ==========
 합병 정렬은 분할정복(Divide and conquer)방식으로 설계된 알고리즘이다. 방식은 한가지의 큰문제를 반으로 쪼개서 해결하는 방식이다.
 분할의 배열이 1보다 작아질때 까지 반복한다.
+하나의 리스트를 두 개의 균등한 크기로 분할하고 분할된 부분 리스트를 정렬한 다음, 두 개의 정렬된 부분 리스트를 합하여 전체가 정렬된 리스트가 되게 하는 방법이다.
 
 참고자료-https://st-lab.tistory.com/179?category=892973
          https://kim-oriental.tistory.com/15
+         https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html
