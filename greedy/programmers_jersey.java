@@ -2,16 +2,16 @@ import java.util.Arrays;
 
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
-        int answer = n - lost.length;//µµµÏ ¸ÂÁö¾ÊÀº »ç¶÷À» ±¸ÇØÁØ´Ù
+        int answer = n - lost.length;//ë„ë‘‘ ë§ì§€ì•Šì€ ì‚¬ëŒì„ êµ¬í•´ì¤€ë‹¤
         
-        Arrays.sort(reserve);//¿©¹úÀ» °¡Áö°í ÀÖ´Â »ç¶÷À» ¿À¸§Â÷¼ø ¹è¿­
-        Arrays.sort(lost);//ÀÒ¾î¹ö¸°»ç¶÷À» ¿À¸§Â÷¼ø ¹è¿­
+        Arrays.sort(reserve);//ì—¬ë²Œì„ ê°€ì§€ê³  ìˆëŠ” ì‚¬ëŒì„ ì˜¤ë¦„ì°¨ìˆœ ë°°ì—´
+        Arrays.sort(lost);//ìƒì–´ë²„ë¦°ì‚¬ëŒì„ ì˜¤ë¦„ì°¨ìˆœ ë°°ì—´
         
-        for(int i = 0; i<lost.length; i++;) {//ÀÒ¾î¹ö¸° »ç¶÷¸¸Å­ ±æÀÌ¸¦ ¹İº¹
-        	for(int j = 0; j<reserve.length; j++;) {//¿©º°À» °¡Áö°íÀÖ´Â»ç¶÷¸¸Å­ ¹İº¹
-        		if(reserve[j]=lost[i]) {//¿©¹úÀ» °¡Áö°í ÀÖ´Â »ç¶÷ÀÌ µµµÏ¸ÂÀº °æ¿ì
+        for(int i = 0; i<lost.length; i++;) {//ìƒì–´ë²„ë¦° ì‚¬ëŒë§Œí¼ ê¸¸ì´ë¥¼ ë°˜ë³µ
+        	for(int j = 0; j<reserve.length; j++;) {//ì—¬ë³„ì„ ê°€ì§€ê³ ìˆëŠ”ì‚¬ëŒë§Œí¼ ë°˜ë³µ
+        		if(reserve[j]=lost[i]) {//ì—¬ë²Œì„ ê°€ì§€ê³  ìˆëŠ” ì‚¬ëŒì´ ë„ë‘‘ë§ì€ ê²½ìš°
         			answer++;
-            		reserve[j] = -1;//µÑ´Ù -1·Î ¼³Á¤ÇØÁà¼­ ¿©¹úÀ» °¡Áö°í ÀÖ´Â»ç¶÷µµ ÀÒ¾î¹ö¸° »ç¶÷À¸·Î °íÃÄÁØ´Ù
+            		reserve[j] = -1;//ë‘˜ë‹¤ -1ë¡œ ì„¤ì •í•´ì¤˜ì„œ ì—¬ë²Œì„ ê°€ì§€ê³  ìˆëŠ”ì‚¬ëŒë„ ìƒì–´ë²„ë¦° ì‚¬ëŒìœ¼ë¡œ ê³ ì³ì¤€ë‹¤
             		lost[i] = -1;
             		break;
         		}
@@ -20,9 +20,9 @@ class Solution {
         
         for(int i = 0; i<lost.length; i++;) {
         	for(int j = 0; j<reserve.length; j++;) {
-        		if((lost[i]-1 == reserve[j]) || (lost[i]+1 == reserve[j])){//¿©¹úÀ» °¡Áö°í ÀÖ´Â»ç¶÷ÀÌ µµµÏ¸ÂÁö ¾Ê¾Ò´Ù¸é ¾ÕµÚ »ç¶÷ÀÌ ÀÒ¾î¹ö·È´ÂÁö È®ÀÎ
+        		if((lost[i]-1 == reserve[j]) || (lost[i]+1 == reserve[j])){//ì—¬ë²Œì„ ê°€ì§€ê³  ìˆëŠ”ì‚¬ëŒì´ ë„ë‘‘ë§ì§€ ì•Šì•˜ë‹¤ë©´ ì•ë’¤ ì‚¬ëŒì´ ìƒì–´ë²„ë ¸ëŠ”ì§€ í™•ì¸
                     answer++;
-                    reserve[j] = -1; //¾ÏµÚ »ç¶÷¿¡°Ô ºô·ÁÁÖ¾úÀ¸¹Ç·Î -1·Î ¼³Á¤
+                    reserve[j] = -1; //ì•”ë’¤ ì‚¬ëŒì—ê²Œ ë¹Œë ¤ì£¼ì—ˆìœ¼ë¯€ë¡œ -1ë¡œ ì„¤ì •
                     break; 
                 }
         	}
@@ -30,4 +30,5 @@ class Solution {
         return answer;
     }
 }
-//Âü°í ÀÚ·á https://jeleedev.tistory.com/32
+//ì°¸ê³  ìë£Œ https://jeleedev.tistory.com/32
+//í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ ë¬¸ì œ https://programmers.co.kr/learn/courses/30/lessons/42862?language=java
