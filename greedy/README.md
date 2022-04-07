@@ -11,4 +11,16 @@
 
 하지만 그래도 알고리즘의 속도가 빠르기때문에 조건이 만족된 경우 언제든지 사용할수있다.
 
+2가지의 조건은 탐욕 선택 속성(Greedy Choice Property)하고 최적 부분 구조(Optimal Substructure)두가지가 있다.
+
+탐욕 선택 속성(Greedy Choice Property)
+=====
+이전의 선택에 영향을 주지않는다는 뜻이다.
+
+최적 부분 구조(Optimal Substructure)
+===
+부분적인 문제가 최적한 결과 전체에도 그대로 적용될수 있다.
+최적 부분 구조는 DP(Dynamic Programming)과 비슷한 부분이 있지만, 다른것은 DP는 작은 문제에 영향을 받아서 Overlapping이 될수도 있지만, 그리디는
+영향을 받으면 안되는 알고리즘이고 다른 경우의 결과와 상관없이 최적의해를 구할수있기때문입니다.
+
 참조 자료 :https://hongjw1938.tistory.com/172
