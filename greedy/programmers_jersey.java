@@ -22,7 +22,7 @@ class Solution {
         	for(int j = 0; j<reserve.length; j++;) {
         		if((lost[i]-1 == reserve[j]) || (lost[i]+1 == reserve[j])){//여벌을 가지고 있는사람이 도둑맞지 않았다면 앞뒤 사람이 잃어버렸는지 확인
                     answer++;
-                    reserve[j] = -1; //앞뒤 사람에게 빌려주었으므로 -1로 설정
+                    reserve[j] = 0; //앞뒤 사람에게 빌려주고 자기자신의 체육복은 잃어버린 경우 -1이라 해주면 여벌을 빌려주고 자기자신은 입고있으므로 0으로 설정해준다
                     break; 
                 }
         	}
