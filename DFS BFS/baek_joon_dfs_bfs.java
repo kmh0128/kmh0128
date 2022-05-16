@@ -3,33 +3,33 @@ import java.util.*;
 
 
 public class Main {
-	static int node[][]; // ÀÎÁ¢Çà·Ä ¹è¿­
-	static int visit[]; // ³ëµåÀÇ ¹æ¹®¿©ºÎ Ç¥½Ã ¹è¿­
-	static Queue<Integer> queue = new LinkedList<>(); // BFS¸¦ À§ÇÑ Å¥
-	static void dfs(int x) { // DFS ¸Ş¼Òµå Àç±ÍÈ£Ãâ ¹İº¹ÇÑ´Ù.
-		if(visit[x] == 1) return; //ÀÌ¹Ì ¹æ¹®ÇÑ ³ëµå¶ó¸é Á¾·áÇÑ´Ù.
+	static int node[][]; // ì¸ì ‘í–‰ë ¬ ë°°ì—´
+	static int visit[]; // ë…¸ë“œì˜ ë°©ë¬¸ì—¬ë¶€ í‘œì‹œ ë°°ì—´
+	static Queue<Integer> queue = new LinkedList<>(); // BFSë¥¼ ìœ„í•œ í
+	static void dfs(int x) { // DFS ë©”ì†Œë“œ ì¬ê·€í˜¸ì¶œ ë°˜ë³µí•œë‹¤.
+		if(visit[x] == 1) return; //ì´ë¯¸ ë°©ë¬¸í•œ ë…¸ë“œë¼ë©´ ì¢…ë£Œí•œë‹¤.
 		
-		visit[x] = 1; //¹æ¹®ÇÏÁö ¾ÊÀº ³ëµå¶ó¸é ¹æ¹®¿©ºÎ¸¦ Ç¥½ÃÇÏ°í Ãâ·ÂÇÑ´Ù.
+		visit[x] = 1; //ë°©ë¬¸í•˜ì§€ ì•Šì€ ë…¸ë“œë¼ë©´ ë°©ë¬¸ì—¬ë¶€ë¥¼ í‘œì‹œí•˜ê³  ì¶œë ¥í•œë‹¤.
 		System.out.print(x+" ");
-		for(int i =1;i<node.length;i++) { // ÀÎÁ¢Çà·ÄÀÇ °æ¿ì Çà¿­ÀÌ ´ë°¢¼±À» ±âÁØÀ¸·Î ´ëÄªÀÌ µÇ¹Ç·Î Çà ¶Ç´Â ¿­À» ±âÁØÀ¸·Î¸¸ Å½»öÇÏ¸éµÈ´Ù.			
-			if(node[x][i]==1) { // ¹æ¹®ÇÏÁö ¾ÊÀº ³ëµåÀÇ ÀÎÁ¢ ³ëµåÀÏ °æ¿ì
+		for(int i =1;i<node.length;i++) { // ì¸ì ‘í–‰ë ¬ì˜ ê²½ìš° í–‰ì—´ì´ ëŒ€ê°ì„ ì„ ê¸°ì¤€ìœ¼ë¡œ ëŒ€ì¹­ì´ ë˜ë¯€ë¡œ í–‰ ë˜ëŠ” ì—´ì„ ê¸°ì¤€ìœ¼ë¡œë§Œ íƒìƒ‰í•˜ë©´ëœë‹¤.			
+			if(node[x][i]==1) { // ë°©ë¬¸í•˜ì§€ ì•Šì€ ë…¸ë“œì˜ ì¸ì ‘ ë…¸ë“œì¼ ê²½ìš°
 				
-				dfs(i); // ÇØ´ç ³ëµå·Î ÀÌµ¿
+				dfs(i); // í•´ë‹¹ ë…¸ë“œë¡œ ì´ë™
 			}
 		}
 	}
 	
-	static void bfs(int x) { //BFS ¸Ş¼Òµå Å¥¸¦ ÀÌ¿ëÇØ ±¸Çö
+	static void bfs(int x) { //BFS ë©”ì†Œë“œ íë¥¼ ì´ìš©í•´ êµ¬í˜„
 		      
-		queue.offer(x); // Å¥¿¡ ½ÃÀÛ ³ëµå »ğÀÔ
-		visit[x] = 1; // ½ÃÀÛ ³ëµå¸¦ ¹æ¹® Ç¥½Ã
-		while(!queue.isEmpty()) { // °ø¹éÅ¥°¡ µÉ ¶§±îÁö ¹İº¹
-			x = queue.poll(); // Å¥¿¡¼­ ÇÏ³ª ²¨³½´Ù.
-			System.out.print(x+" "); // Ãâ·Â
-			for(int i =1;i<node.length;i++) { // Å¥¿¡¼­ ²¨³½ ³ëµå¿Í ¿¬°áµÈ ³ëµå¸¦ Å½»ö			
-				if(visit[i]!=1 && node[x][i]==1 ) {	// Å¥¿¡¼­ ²¨³½ ³ëµå¿Í ¿¬°áµÈ ³ëµå°¡ ¹æ¹®ÇÏÁö ¾Ê¾Ò´ø ³ëµå¶ó¸é
-					queue.offer(i); // Å¥¿¡ »ğÀÔ ÈÄ
-					visit[i] =1; // ¹æ¹® Ç¥½Ã
+		queue.offer(x); // íì— ì‹œì‘ ë…¸ë“œ ì‚½ì…
+		visit[x] = 1; // ì‹œì‘ ë…¸ë“œë¥¼ ë°©ë¬¸ í‘œì‹œ
+		while(!queue.isEmpty()) { // ê³µë°±íê°€ ë  ë•Œê¹Œì§€ ë°˜ë³µ
+			x = queue.poll(); // íì—ì„œ í•˜ë‚˜ êº¼ë‚¸ë‹¤.
+			System.out.print(x+" "); // ì¶œë ¥
+			for(int i =1;i<node.length;i++) { // íì—ì„œ êº¼ë‚¸ ë…¸ë“œì™€ ì—°ê²°ëœ ë…¸ë“œë¥¼ íƒìƒ‰			
+				if(visit[i]!=1 && node[x][i]==1 ) {	// íì—ì„œ êº¼ë‚¸ ë…¸ë“œì™€ ì—°ê²°ëœ ë…¸ë“œê°€ ë°©ë¬¸í•˜ì§€ ì•Šì•˜ë˜ ë…¸ë“œë¼ë©´
+					queue.offer(i); // íì— ì‚½ì… í›„
+					visit[i] =1; // ë°©ë¬¸ í‘œì‹œ
 				}
 			}
 		}
@@ -37,14 +37,14 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);	
 		
-		int n= sc.nextInt(); // Á¤Á¡ÀÇ °³¼ö
-		int m = sc.nextInt(); // °£¼±ÀÇ °³¼ö 
-		int v = sc.nextInt(); // Å½»ö ½ÃÀÛ ³ëµå
+		int n= sc.nextInt(); // ì •ì ì˜ ê°œìˆ˜
+		int m = sc.nextInt(); // ê°„ì„ ì˜ ê°œìˆ˜ 
+		int v = sc.nextInt(); // íƒìƒ‰ ì‹œì‘ ë…¸ë“œ
 		
 		node = new int[n+1][n+1];
 		visit = new int[n+1];
 		
-		for(int i=0; i<m;i++) { // ÀÎÁ¢Çà·Ä·Î ±×·¡ÇÁ¸¦ ±¸Çö
+		for(int i=0; i<m;i++) { // ì¸ì ‘í–‰ë ¬ë¡œ ê·¸ë˜í”„ë¥¼ êµ¬í˜„
 			
 			int a =sc.nextInt();
 			int b = sc.nextInt();
@@ -55,12 +55,12 @@ public class Main {
 		
 		
 		dfs(v);
-		Arrays.fill(visit, 0); // DFSÀÌÈÄ µ¿ÀÏÇÑ ¹æ¹® ¿©ºÎ¹è¿­À» »ç¿ëÇÏ±â ¶§¹®¿¡ ´Ù½Ã 0À¸·Î ÃÊ±âÈ­ ÇØÁØ´Ù.
-		System.out.println("");
+		Arrays.fill(visit, 0); // DFSì´í›„ ë™ì¼í•œ ë°©ë¬¸ ì—¬ë¶€ë°°ì—´ì„ ì‚¬ìš©í•˜ê¸° ë•Œë¬¸ì— ë‹¤ì‹œ 0ìœ¼ë¡œ ì´ˆê¸°í™” í•´ì¤€ë‹¤.
+		System.out.println("");//ì¶œë ¥
 		bfs(v);
 		
 	}
 	
 }
-//Âü°íÀÚ·á https://fbtmdwhd33.tistory.com/27
-//¹éÁØ 1260¹®Á¦ https://www.acmicpc.net/problem/1260
+//ì°¸ê³ ìë£Œ https://fbtmdwhd33.tistory.com/27
+//ë°±ì¤€ 1260ë¬¸ì œ https://www.acmicpc.net/problem/1260
