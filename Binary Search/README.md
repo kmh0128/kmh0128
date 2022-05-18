@@ -21,4 +21,35 @@
 단어가 있는 부분 만을 다시 검색한다.
 
 
+
+이진 탐색의 구현
+========
+1. 탐색의 대상이 되는 자료들이 array[low] 에서부터 array[high]에 들어있다고 가정하자. (정렬되어 있어야 함)
+즉 어떤 시점에서 탐색되어야 할 범위는 low에서 high 까지가 된다.
+
+맨 처음 low에는 0번 인덱스의 값, high에는 n-1번 인덱스의 값이 들어갈 것이다.
+
+ 
+
+2. low와 high값에 의거해  중간값 mid 값은 (low + high) / 2이다.
+즉, array[low] ~ array[high] 까지의 탐색은
+
+array[low] ~ array[middle-1] +  array[middle+1] + array[high]까지의 탐색이 된다.
+
+ 
+
+3. array[mid] 값과 구하고자 하는 key값을 비교한다.
+3-1. key > mid :  구하고자 하는 값이 중간값보다 높다면 low를 mid +1로 만들어 줌 (왼쪽 반을 버림)
+
+3-2. key < mid : 구하고자하는 값이 중간값 보다 낮다면 high를 mid-1로 만들어 줌 (오른쪽 반을 버림)
+
+3-3. key == mid : 구하고자 하는 값을 찾음 중간값 리턴 
+
+ 
+
+4. low > high가 될 때까지 1~3번을 반복하면서 구하고자 하는 값을 찾는다.
+(이때까지 못 찾으면 탐색 실패 -1, false, error 등 return)
+![다운로드 (1)](https://user-images.githubusercontent.com/100178951/169038105-b50f6851-b6a6-46c5-b9fb-d42ad3e0d9c4.png)
+
+
 참고 자료 https://minhamina.tistory.com/127
