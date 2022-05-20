@@ -18,7 +18,7 @@ public class Main {
         Arrays.sort(house);//이분탐색은 중간값보다 왼쪽은 작고 오른쪽은 커야되기때문에 오름차순 정렬
 
         int left = 1; //최소 간격
-        int right = house[N-1] - h_point[0]; //최대 간격
+        int right = house[N-1] - house[0]; //최대 간격
 
         while(left <= right)
         {
