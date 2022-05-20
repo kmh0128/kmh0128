@@ -15,19 +15,19 @@ public class Main {
         {
             house[i] = Integer.parseInt(br.readLine());
         }
-        Arrays.sort(house);//ÀÌºĞÅ½»öÀº Áß°£°ªº¸´Ù ¿ŞÂÊÀº ÀÛ°í ¿À¸¥ÂÊÀº Ä¿¾ßµÇ±â¶§¹®¿¡ ¿À¸§Â÷¼ø Á¤·Ä
+        Arrays.sort(house);//ì´ë¶„íƒìƒ‰ì€ ì¤‘ê°„ê°’ë³´ë‹¤ ì™¼ìª½ì€ ì‘ê³  ì˜¤ë¥¸ìª½ì€ ì»¤ì•¼ë˜ê¸°ë•Œë¬¸ì— ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 
-        int left = 1; //ÃÖ¼Ò °£°İ
-        int right = house[N-1] - h_point[0]; //ÃÖ´ë °£°İ
+        int left = 1; //ìµœì†Œ ê°„ê²©
+        int right = house[N-1] - h_point[0]; //ìµœëŒ€ ê°„ê²©
 
         while(left <= right)
         {
-            int mid = (left + right) / 2;//Áß°£°ª 
+            int mid = (left + right) / 2;//ì¤‘ê°„ê°’ 
 
-            if(set(mid) >= C) left = mid+1;//¹İº¹¹® ³»¿¡¼­ Áß°£°ªÀÎ mid°ªº¸´Ù ¼³Ä¡ÇÑ°Ô ÀûÀ¸¸é °£°İÀ» Á¼È÷°í ÀÛÀ¸¸é ³ĞÈ÷¸éµÈ´Ù
+            if(set(mid) >= C) left = mid+1;//ë°˜ë³µë¬¸ ë‚´ì—ì„œ ì¤‘ê°„ê°’ì¸ midê°’ë³´ë‹¤ ì„¤ì¹˜í•œê²Œ ì ìœ¼ë©´ ê°„ê²©ì„ ì¢íˆê³  ì‘ìœ¼ë©´ ë„“íˆë©´ëœë‹¤
             else right = mid-1;
         }
-        System.out.print(left-1);//Å»Ãâ Á¶°Ç
+        System.out.print(left-1);
     }
     static int set(int dist)
     {
@@ -37,7 +37,7 @@ public class Main {
         {
             if((house[i] - cur) >= dist)
             {
-                cur = house[i];//curÀº °ªÀÌ Ãß°¡µÉ¶§¸¶´Ù ³ëµå ¸Ç³¡À» ÂüÁ¶ÇÏ´Â ÂüÁ¶ º¯¼ö
+                cur = house[i];//curì€ ê°’ì´ ì¶”ê°€ë ë•Œë§ˆë‹¤ ë…¸ë“œ ë§¨ëì„ ì°¸ì¡°í•˜ëŠ” ì°¸ì¡° ë³€ìˆ˜
                 cnt++;
             }
         }
@@ -45,5 +45,5 @@ public class Main {
     }
 }
 
-//¹®Á¦ https://www.acmicpc.net/problem/2110
-//Âü°íÀÚ·á https://intrepidgeeks.com/tutorial/install-baizhun-2110-router-java-java
+//ë¬¸ì œ https://www.acmicpc.net/problem/2110
+//ì°¸ê³ ìë£Œ https://intrepidgeeks.com/tutorial/install-baizhun-2110-router-java-java
