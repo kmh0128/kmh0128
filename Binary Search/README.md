@@ -31,7 +31,7 @@
 
  
 
-2. low와 high값에 의거해  중간값 mid 값은 (low + high) / 2이다.
+2. low와 high값에 의거해  중간값 mid 값은 (low + high) / 2이다
 즉, array[low] ~ array[high] 까지의 탐색은
 
 array[low] ~ array[middle-1] +  array[middle+1] + array[high]까지의 탐색이 된다.
