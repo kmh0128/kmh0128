@@ -24,12 +24,12 @@ public class Main {
         {
             int mid = (left + right) / 2;//중간값 
 
-            if(set(mid) >= C) left = mid+1;//반복문 내에서 중간값인 mid값보다 설치한게 적으면 간격을 좁히고 작으면 넓히면된다
+            if(set(mid) >= C) left = mid+1;// set - 사용자가 메소드를 호출 시 데이터를 삽입해주는 역할을 담당합니다
             else right = mid-1;
         }
         System.out.print(left-1);
     }
-    static int set(int dist)
+    static int set(int dist)//dist 변수를 호출하면 set 그것을 설정해주는 역할
     {
         int cur = house[0];
         int cnt = 1;
@@ -47,3 +47,4 @@ public class Main {
 
 //문제 https://www.acmicpc.net/problem/2110
 //참고자료 https://intrepidgeeks.com/tutorial/install-baizhun-2110-router-java-java
+//set 참고 자료 https://akdl911215.tistory.com/261
