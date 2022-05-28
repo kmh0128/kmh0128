@@ -9,44 +9,44 @@ public class main {
 
         StringTokenizer st = new StringTokenizer(bf.readLine());
 
-        int n = Integer.parseInt(st.nextToken());//ÁıÀÇ °³¼ö 
-        int c = Integer.parseInt(st.nextToken());// °øÀ¯±âÀÇ °³¼ö integerÇüÀ¸·Î º¯È¯
+        int n = Integer.parseInt(st.nextToken());//ì§‘ì˜ ê°œìˆ˜ 
+        int c = Integer.parseInt(st.nextToken());// ê³µìœ ê¸°ì˜ ê°œìˆ˜ integerí˜•ìœ¼ë¡œ ë³€í™˜
 
-        int[] house = new int[n];//ÁıÀÇ ¹è¿­À» nÀ¸·Î »ğÀÔ
+        int[] house = new int[n];//ì§‘ì˜ ë°°ì—´ì„ nìœ¼ë¡œ ì‚½ì…
 
         for (int i=0; i<n; i++) {
-            house[i] = Integer.parseInt(bf.readLine());//n±æÀÌ ¸¸Å­ ¹İº¹
+            house[i] = Integer.parseInt(bf.readLine());//nê¸¸ì´ ë§Œí¼ ë°˜ë³µ
         }
 
-        Arrays.sort(house);// ÀÌºĞÅ½»öÀº Áß°£°ªÀ» ±âÁØÀ¸·Î ¿ŞÂÊÀº ÀÛÀº°ª ¿À¸¥ÂÊÀº Å«°ªÀÌ µÇ¾î¾ß ÇÔÀ¸·Î ¿À¸¥Â÷¼ø 
+        Arrays.sort(house);// ì´ë¶„íƒìƒ‰ì€ ì¤‘ê°„ê°’ì„ ê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½ì€ ì‘ì€ê°’ ì˜¤ë¥¸ìª½ì€ í°ê°’ì´ ë˜ì–´ì•¼ í•¨ìœ¼ë¡œ ì˜¤ë¥¸ì°¨ìˆœ 
 
-        int start = 1;//1·Î ÃÊ±âÈ­
+        int start = 1;//1ë¡œ ì´ˆê¸°í™”
         int end = house[n-1] - house[0];
 
-        int result = 0;//°á°ú°ªÀº 0À¸·Î ÃÊ±âÈ­
+        int result = 0;//ê²°ê³¼ê°’ì€ 0ìœ¼ë¡œ ì´ˆê¸°í™”
 
 
         while (start <= end) {
-            int mid = (start+end)/2;//Á¤´äÈÄº¸
-            int left = house[0];//°¡Àå ¿ŞÂÊ 
-            int cnt = 1;//°øÀ¯±â °¹¼ö ->°¡Àå ¿ŞÂÊÁı¿¡ ÇÏ³ª ¼³Ä¡ÇÏ°í ½ÃÀÛÇØ¼­ 1
+            int mid = (start+end)/2;//ì¤‘ê°„ê°’ì„ ê¸°ì¤€ìœ¼ë¡œ
+            int left = house[0];//ê°€ì¥ ì™¼ìª½ 
+            int cnt = 1;//ê³µìœ ê¸° ê°¯ìˆ˜ ->ê°€ì¥ ì™¼ìª½ì§‘ì— í•˜ë‚˜ ì„¤ì¹˜í•˜ê³  ì‹œì‘í•´ì„œ 1
 
             for (int i=1; i<n; i++) {
                 if (house[i]-left>=mid) {
-                    //house[i]-left = °£°İ
-                    //ÃÖ¼Ò°Å¸®°¡ Áß°£°ªÀÌ midº¸´Ù Å©¸é Ä«¿îÆ®¸¦ Áõ°¡ÇØÁØ´Ù
+                    //house[i]-left = ê°„ê²©
+                    //ìµœì†Œê±°ë¦¬ê°€ ì¤‘ê°„ê°’ì´ midë³´ë‹¤ í¬ë©´ ì¹´ìš´íŠ¸ë¥¼ ì¦ê°€í•´ì¤€ë‹¤
                     cnt++;
                     left = house[i];
                 }
             }
 
             if (cnt>=c) {
-                //½ÇÁ¦ ¼³Ä¡µÉ °øÀ¯±âº¸´Ù ¸¹ÀÌ ¼³Ä¡°¡µÈ°İ¿ì ¿À¸¥ÂÊÀ¸·Î ÀÌµ¿ÇØ ´õ ±ä °£°İ ¸ÂÃçÁà¾ßÇÔ
+                //ì‹¤ì œ ì„¤ì¹˜ë  ê³µìœ ê¸°ë³´ë‹¤ ë§ì´ ì„¤ì¹˜ê°€ëœê²©ìš° ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì´ë™í•´ ë” ê¸´ ê°„ê²© ë§ì¶°ì¤˜ì•¼í•¨
                 result = mid;
                 start = mid+1;
             } else {
-                //°øÀ¯±â¸¦ cº¸´Ù Àû°Ô ¼³Ä¡ÇÏ¸é ¿ŞÂÊÀ¸·Î ÀÌµ¿ÇØ ´õ ÂªÀº °£°İÀ¸·Î ¸ÂÃçÁà¾ßÇÔ
-                end = mid-1;//½ºÅ¸Æ®¸¦ 1·Î ½ÃÀÛÇØ¼­ ÇÏ³ª¸¦ »©ÁØ´Ù
+                //ê³µìœ ê¸°ë¥¼ cë³´ë‹¤ ì ê²Œ ì„¤ì¹˜í•˜ë©´ ì™¼ìª½ìœ¼ë¡œ ì´ë™í•´ ë” ì§§ì€ ê°„ê²©ìœ¼ë¡œ ë§ì¶°ì¤˜ì•¼í•¨
+                end = mid-1;//ìŠ¤íƒ€íŠ¸ë¥¼ 1ë¡œ ì‹œì‘í•´ì„œ í•˜ë‚˜ë¥¼ ë¹¼ì¤€ë‹¤
             }
         }
 
@@ -54,5 +54,5 @@ public class main {
 
     }
 }
-// ¹éÁØ 2110 °øÀ¯±â ¼³Ä¡ (https://www.acmicpc.net/problem/2110)
-// Âü°í https://hidelookit.tistory.com/168
+// ë°±ì¤€ 2110 ê³µìœ ê¸° ì„¤ì¹˜ (https://www.acmicpc.net/problem/2110)
+// ì°¸ê³  https://hidelookit.tistory.com/168
