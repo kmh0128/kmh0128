@@ -50,7 +50,35 @@ G는 그래프를 나타내며 V는 간선 E는 정점이다.
 
 간선의 비용이나 가중치가 할당된 그래프를 가중치 그래프라고 한다.
 
-4.
+4.Self-loop 그래프
+
+self-loop
+
+한 간선이 같은 정점에 부속해 있을 때 self-loop라고 합니다.
+
+e = (u, u)
+
+여기에 속하는 또하나의 그래프는 isolated 그래프가 있으며
+
+간선이 없는 경우를 말하며 간선이 없는 정점을 isolated vertex라고 합니다.
+![다운로드 (5)](https://user-images.githubusercontent.com/100178951/171150747-8d67fa68-bd37-403f-a75b-b5d6ab8ade67.png)
+
+
+위 그림에는 없는 그래프지만 추가로 존재하는 그래프는
+
+1. 단순 그래프(Simple Graph)
+
+단순 그래프는 중복된 간선과 loop가 없는 그래프입니다.
+
+단순 그래프에서 정점의 개수가 n이라고 했을 때 최대 n-1개의 간선을 가질 수 있습니다.
+![단순그래프](https://user-images.githubusercontent.com/100178951/171151212-2b34bfff-0e49-4f3b-a5d2-70c1a655889f.png)
+
+2.완전 그래프 (Complete Graph)
+
+완전 그래프는 간선의 수가 최대인 그래프입니다. 정점의 수가 n개이면 Kn으로 표현합니다.
+
+정점 수 :n , 간선의 수: n*(n-1)/2
+![다운로드 (6)](https://user-images.githubusercontent.com/100178951/171151464-0572e753-8dc7-4db4-ba52-64b422b3152f.png)
 
 
 //참고 자료 https://yoongrammer.tistory.com/83
