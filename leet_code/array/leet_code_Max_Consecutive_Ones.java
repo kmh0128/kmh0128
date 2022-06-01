@@ -1,18 +1,18 @@
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
-        int count = 0;//¿¬¼ÓµÇ´Â 1À» Ä«¿îÆ®
-        int max =0;//ÃÖ´ë°ª
+        int cnt = 0;//ì—°ì†ë˜ëŠ” 1ì„ ì¹´ìš´íŠ¸
+        int max =0;//ìµœëŒ€ê°’
         
         for(int n : nums) {
         	if(n==1) {
-        		count ++;//¹è¿­À» µ¹¸é¼­ 1ÀÌ ³ª¿À¸é Ä«¿îÆ®
-        		if(max < count) =count;//ÀÌÀü¿¡ 1À» Ä«¿îÆ®ÇÑ°ª max°¡ ÀÌÈÄ¿¡ Ä«¿îÆ®ÇÑ°Íº¸´Ù ÀûÀ¸¸é max =count°ªÀ» ÇØÁØ´Ù
+        		cnt ++;//ë°°ì—´ì„ ëŒë©´ì„œ 1ì´ ë‚˜ì˜¤ë©´ ì¹´ìš´íŠ¸
+        		if(max < cnt) =cnt;//ì´ì „ì— 1ì„ ì¹´ìš´íŠ¸í•œê°’ maxê°€ ì´í›„ì— ì¹´ìš´íŠ¸í•œê²ƒë³´ë‹¤ ì ìœ¼ë©´ max =countê°’ì„ í•´ì¤€ë‹¤
         	}
-        	else count = 0;//´Ù¸¥°æ¿ì 1°ú 0¹Û¿¡ ¾ø½À´Ï±î 0À¸·Î Ä«¿îÆ® ÇØÁØ´Ù
+        	else cnt = 0;//ë‹¤ë¥¸ê²½ìš° 1ê³¼ 0ë°–ì— ì—†ìŠµë‹ˆê¹Œ 0ìœ¼ë¡œ ì¹´ìš´íŠ¸ í•´ì¤€ë‹¤
         }
         
-        return max;//¸Æ½º°ª ¸®ÅÏ
+        return max;//ë§¥ìŠ¤ê°’ ë¦¬í„´
     }
 }
 
-//¹®Á¦ÀÚ·á ¹Ø Âü°í ÀÚ·á :https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3238/
+//ë¬¸ì œìë£Œ ë°‘ ì°¸ê³  ìë£Œ :https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3238/
