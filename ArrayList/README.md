@@ -28,6 +28,24 @@ import java.util.ArrayList;
 
 위와 같은 구문을 선언해줘야됩니다.(ArrayList란 Collection 프레임워크의 일부이며 java.util 패키지에 소속되어 있습니다)
 
+ArrayList<Integer> integers1 = new ArrayList<Integer>(); // 타입 지정 - int 타입으로 지정
+
+ArrayList<Integer> integers2 = new ArrayList<>(); // 타입 생략 가능 
+ 
+ArrayList<Integer> integers3 = new ArrayList<Integer>(10); // 초기 용량 세팅
+ 
+ArrayList<Integer> integers4 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4)); // 초기 값 세팅
+
+ArrayList<String> strings1 = new ArrayList<String>(); // String 타입 사용
+ 
+ArrayList<Character> char1 = new ArrayList<Character>(); // char 타입 사용 
+ 
+ 생성시 위와 같이 new ArrayList의 선언방법의 예시입니다.
+ 
+ 보통은 integer형이 많이 쓰이지만 경우에 따라서는 String형과 char형으로도 쓰입니다.
+ 
+ ArrayList추가
+========
 
 
 참조 자료 https://psychoria.tistory.com/765
