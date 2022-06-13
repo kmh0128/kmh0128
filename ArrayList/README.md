@@ -44,8 +44,21 @@ ArrayList<Character> char1 = new ArrayList<Character>(); // char 타입 사용
  
  보통은 integer형이 많이 쓰이지만 경우에 따라서는 String형과 char형으로도 쓰입니다.
  
- ArrayList추가
-========
+ArrayList추가
+================
+ 
+ ArrayList의 추가하는 방법은  add() 메서드를 사용하게된다.
+ 
+ 1.add(Object) -> ArrayList의 마지막에 데이터를 추가
+ 
+ 2.add(int index, Object) : ArrayList의 index에 데이터를 추가합니다.
+
+ ex) 예시
+ 
+![All-1](https://user-images.githubusercontent.com/100178951/173365590-f8c904fa-3e6d-43c1-b6e0-3916fbfa0d75.jpg)
+
+
+
 
 
 참조 자료 https://psychoria.tistory.com/765
