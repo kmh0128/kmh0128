@@ -59,7 +59,7 @@ ArrayList추가
 
 예시의 결과 Hello와 Hello 사이에 world가 출력 되었습니다.
  
-ArrayList의값을 변경
+ArrayList의값(원소)을 변경
 ===================
  
  ArrayList의 값을 변경할려면 set()메서드를 사용하게 된다.
@@ -70,6 +70,24 @@ set(int index, Object)를 사용
 ![all-2](https://user-images.githubusercontent.com/100178951/173594211-d85a6c90-0924-4f5a-b6f1-c7c92452f9b1.jpg)
 
 예시 처럼"Hello", 3개에서 가운데것이 Wolrd로 변경 -> "Hello", "World", "Hello"로 값이 변경
+ 
+ ArrayList의 삭제
+ =================
+ ArrayList 값을 삭제하는 방법에는 remove()와 clear()가 있습니다
+
+ clear()는 ArrayList의 모든 값을 삭제할 때 사용됩니다
+
+ remove()는 값을 하나씩 제거할 때 사용됩니다
+
+ remove()는 두 개의 사용법이 있는데
+
+ remove(Object) : Object를 파라미터로 넘기는 경우 해당 ArrayList의 Object와 같은 값을 삭제합니다
+
+ 만약 같은 값이 두 개인 경우 첫 번째 같은 값을 제거합니다
+
+ remove(int index) : ArrayList의 index에 해당하는 값을 삭제합니다
+
+ 
 
 
 참조 자료 https://psychoria.tistory.com/765
