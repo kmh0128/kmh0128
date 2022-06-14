@@ -57,8 +57,19 @@ ArrayList추가
  
 ![alll-1](https://user-images.githubusercontent.com/100178951/173588817-9eacaedd-4ccf-4ff6-ab51-ee448cb3f196.jpg)
 
+예시의 결과 Hello와 Hello 사이에 world가 출력 되었습니다.
+ 
+ArrayList의값을 변경
+===================
+ 
+ ArrayList의 값을 변경할려면 set()메서드를 사용하게 된다.
+ 
+set()을 사용하기 위해서는 바꾸려면 데이터가 자신의 Index위치를 알아야 변경이 가능하다
+set(int index, Object)를 사용
 
+![all-2](https://user-images.githubusercontent.com/100178951/173594211-d85a6c90-0924-4f5a-b6f1-c7c92452f9b1.jpg)
 
+예시 처럼"Hello", 3개에서 가운데것이 Wolrd로 변경 -> "Hello", "World", "Hello"로 값이 변경
 
 
 참조 자료 https://psychoria.tistory.com/765
