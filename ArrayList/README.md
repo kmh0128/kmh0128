@@ -55,7 +55,7 @@ ArrayList추가
 
  ex) 예시
  
-![All-1](https://user-images.githubusercontent.com/100178951/173365590-f8c904fa-3e6d-43c1-b6e0-3916fbfa0d75.jpg)
+![alll-1](https://user-images.githubusercontent.com/100178951/173588817-9eacaedd-4ccf-4ff6-ab51-ee448cb3f196.jpg)
 
 
 
