@@ -85,7 +85,10 @@ set(int index, Object)를 사용
 
  만약 같은 값이 두 개인 경우 첫 번째 같은 값을 제거합니다
 
- remove(int index) : ArrayList의 index에 해당하는 값을 삭제합니다
+ remove(int index) : ArrayList의 index에 해당하는 값을 삭제합니다.
+ 
+ 예시![asfasfas](https://user-images.githubusercontent.com/100178951/173600072-d4381ee4-1a91-4799-be93-b4ce2c8dddf4.jpg)
+
 
  
 
