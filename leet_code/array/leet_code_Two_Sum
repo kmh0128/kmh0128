@@ -1,8 +1,8 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        for(int i = 0; i<nums.length; i++){
-            for(int j = i+1; j<nums.length; j++){
-                if(nums[i] + nums[j] == target)
+        for(int i = 0; i<nums.length; i++){ //nums의 길이만큼 반복문 선언
+            for(int j = i+1; j<nums.length; j++){//문제의 조건에 따라 이중 반복문 선언
+                if(nums[i] + nums[j] == target)//해당 문제는  예를 들면 해당 연속된 인덱스끼리의 합이므로 i번째면 j는 i+1번째 인덱스가 된다
                     return new int[]{i, j};
             }
         }
