@@ -90,6 +90,9 @@ set(int index, Object)를 사용
  예시![asfasfas](https://user-images.githubusercontent.com/100178951/173600072-d4381ee4-1a91-4799-be93-b4ce2c8dddf4.jpg)
 
 
+ ArrayList 크기 구하기
+ 
+ArrayList의 크기를 구하는 방법은 size() 메서드를 사용하여 구할 수 있습니다
  
 
 
