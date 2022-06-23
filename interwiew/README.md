@@ -33,6 +33,28 @@
            return fibo[n] = fibo(n - 1) + fibo(n - 2);
         }
 
+
+
+10회 1~10까지 랜덤한 숫자를 출력하여 중복된 숫자가 있을 경우 true, false를 반환
+=======
+>      >10회 1~10까지 랜덤한 숫자를 출력하여 중복된 숫자가 있을 경우 true, false를 반환
+
+        int randomQuiz() {
+           for(int i = 0; i<10; i++)
+           {
+               int n = rand() % 10 + 1;
+               cout << n << endl;
+               if(!Quiz[n]) {
+                     cout << "false" << endl;
+                     Quiz[n] = true;
+               }
+               else
+                    cout << "true" << endl;
+           }
+        }
+
+
+
 //참고자료 https://n-square.tistory.com/82
 
 //참고자료 https://github.com/4z7l/tech_interview.zip/blob/main/%EC%A7%81%EB%AC%B4/Coding.md
