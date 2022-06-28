@@ -38,7 +38,7 @@
 
 10회 1~10까지 랜덤한 숫자를 출력하여 중복된 숫자가 있을 경우 true, false를 반환
 =======
->      >10회 1~10까지 랜덤한 숫자를 출력하여 중복된 숫자가 있을 경우 true, false를 반환
+>      10회 1~10까지 랜덤한 숫자를 출력하여 중복된 숫자가 있을 경우 true, false를 반환
 
         int randomQuiz() {
            for(int i = 0; i<10; i++)
@@ -57,7 +57,16 @@
 
 
 
-재귀
+재귀를 이용한 팩토리얼 문제
+==========
+>         재귀를 이용한 팩토리얼 문제
+
+           int factorial(int n) {
+              if(n == 1)
+                 return 1;
+              else
+                 return n * factorial(n - 1);
+           }
 
 //참고자료 https://n-square.tistory.com/82
 
