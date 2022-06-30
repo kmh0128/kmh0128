@@ -68,6 +68,11 @@
                  return n * factorial(n - 1);
            }
 
+
+
+1000보다 작은 숫자 중 3과 5의 배수의 총합을 구하는 프로그램
+===============
+
 //참고자료 https://n-square.tistory.com/82
 
 //참고자료 https://github.com/4z7l/tech_interview.zip/blob/main/%EC%A7%81%EB%AC%B4/Coding.md
