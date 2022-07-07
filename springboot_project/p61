@@ -27,3 +27,6 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
 }
+
+
+참고 서적 스프링 부트와 AWS로 혼자구현하는 웹 서비스
