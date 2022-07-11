@@ -47,6 +47,72 @@ DB - DBUnit
 톰캣(Tomcat)- 아파치 소프트웨어 재단에서 개발하는 Java 기반의 서블릿 컨테이너이자 웹 서버. JSP/Spring으로 웹사이트를 구축한다면 톰캣은 거의 반드시 사용된다고 볼 수 있다. 
 Tomcat은 수컷 고양이를 뜻하는 영어 단어이다.
 
+Test 코드 및 Controller 코드
+======
+
+Controller 코드
+![test1](https://user-images.githubusercontent.com/100178951/178311137-e3aa1376-dd5f-4c41-ace8-008aa55b11cf.jpg)
+
+@SpringBootApplication의 기능은
+스프링 부트의 자동 설정, 스프링 Bean 읽기와 생성을 모두 자동으로 설정됩니다.
+
+@SpringBootApplication 이 있는 위치부터 설정을 읽어가기 때문에 이 클래스는 항상 프로젝트의 최상단에 위치 해야합니다.
+
+main 메소드에서 실행하는 SpringApplication.run 으로 인해 내장 WAS(Web Application Server) 를 실행합니다.
+
+내장 WAS란 별도의 외부에 WAS 를 두지 않고 애플리케이션을 실행할 때 내부에서 WAS를 실행하는 것을 의미합니다.
+
+스프링 부트에선 내장 WAS 사용을 권장합니다.
+
+언제 어디서나 같은 환경에서 스프링 부트를 배포할 수 있기 때문입니다.
+
+Test 코드
+====
+![Test2](https://user-images.githubusercontent.com/100178951/178311689-7aead787-1edd-4e0a-a0f7-adf10f4329e2.jpg)
+
+
+테스트 코드는 대상 클래스 이름에 Test를 붙인다. ex) HelloControllerTest
+
+@RunWith(SpringRunner.class)
+
+()안에 있는 스프링 실행자를 사용하겠다는 의미. -> 스프링부트 테스트와 JUnit 사이에 연결자 역할을 한다.
+
+자신은 스프링부트가 최신버전이어서 2.7.1버전이어서 2.1.7과 같이 해당 버전에서는 오류가 발생했는데 이때 Alt+Enter를 누르면 문제에 대한 수정 제안 목록이 표시
+
+되고 해결되었습니다
+ 
+@WebMvcTest
+
+Web에서 테스트하기 힘든 컨트롤러를 테스트 해준다. Web(MVC)에 집중할 수 있는 어노테이션으로 @Controller, @ControllerAdvice등을 사용할 수 있다.
+
+ 
+
+@Autowired
+
+스프링이 관리하는 빈(Bean)을 주입 받는다.
+
+ 
+
+MockMvc
+
+웹 어플리케이션을 서버에 배포하지 않고도 스프링 MVC의 동작을 재현할 수 있는 클래스이다.
+
+ 
+
+private MockMvc mvc
+
+이 클래스(객체)를 통해 웹 API를 테스트할 수 있다.(HTTP, GET, POST 등)
+
+테스트코드를 실행하였을때 (Shift + + control + r)과 같이 Tests passed가 나오면 테스트가 무사히 통과된것입니다.
+
+![다운로드 (2)](https://user-images.githubusercontent.com/100178951/178312153-24999afe-3c17-443f-8bf3-aef1d879ee30.png)
+
+테스트코드가 통과안되는 오류에서는 Intellij 설정 ->build, excution,deployment ->build tool -> gradle -> board항목에서  Gradle항목을 ->Intellij 바꿔주면서 
+
+해결 되었습니다.(찾아보니 빌드할 때 JUnit으로 테스트가 진행 되어야 하는데 Gradle로 되어서 발생하는것 같다.)
+
+여기서 JUnit은 자바에서 테스트 코드 작성을 도와주는 프레임워크입니다.
+
 
 참조서적 및 자료 
 
