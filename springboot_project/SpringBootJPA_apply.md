@@ -118,5 +118,7 @@ post라는 것은 어떨 때 발생하냐면, HTML에서 <Form> 태그를 사용
 평균적으로 Entity의 PK는 Long타입 + Auto_increment로 사용
   
   참고자료 https://unit-15.tistory.com/149
+	
+	https://velog.io/@g0709-19/Gradle-Could-not-find-method-compile-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95
   
   참고서적 -> 스프링 부트와 AWS로 혼자 구현하는 웹 서비스  ->저자 이동욱님
