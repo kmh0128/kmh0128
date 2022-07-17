@@ -117,7 +117,33 @@ post라는 것은 어떨 때 발생하냐면, HTML에서 <Form> 태그를 사용
   
 평균적으로 Entity의 PK는 Long타입 + Auto_increment로 사용
   
-  참고자료 https://unit-15.tistory.com/149
+  5.GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+PK의 생성 규칙이다.
+	
+Spring Boot 2.0에서는 GenerationType.IDENTITY 옵션을 추가해야 auto_increment가 된다.
+	
+6.Column(length = 500, nullable = false)
+	
+테이블의 컬럼을 나타낸다 굳이 선언하지 않더라도 해당 클래스의 필드는 모두 컬럼
+	
+변경이 필요한 옵션이 있을 경우 사용한다. (ex> 문자열 사이즈 변경, 타입 변경 등에 사용됩니다)	
+	
+7.@Builder
+	
+해당 클래스의 빌더 패턴 클래스를 생성한다.
+	
+생성자 상단에 선언 시 생성자에 포함된 필드만 빌더에 포함한다.
+	
+	
+	
+서비스 초기 구축 단계에선 테이블(Entity 클래스) 설계가 빈번하게 변경되는데, 이때 롬복의 어노테이션이 코드 변경량을 최소화시켜준다.	
+	
+	
+	
+	
+	
+	참고자료 https://unit-15.tistory.com/149
 	
 	https://velog.io/@g0709-19/Gradle-Could-not-find-method-compile-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95
   
