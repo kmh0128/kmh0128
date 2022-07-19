@@ -139,8 +139,32 @@ Spring Boot 2.0에서는 GenerationType.IDENTITY 옵션을 추가해야 auto_inc
 	
 서비스 초기 구축 단계에선 테이블(Entity 클래스) 설계가 빈번하게 변경되는데, 이때 롬복의 어노테이션이 코드 변경량을 최소화시켜준다.	
 	
+
+등록/수정/조회 API 만들기
+
+API를 만들기 위해 총 3개의 클래스가 필요하다
+
+Request 데이터를 받을 Dto
 	
+API 요청을 받을 Controller
 	
+트랜잭션, 도메인 기능 간의 순서를 보장하는 Service
+	
+Service는 트랜잭션, 도메인 간 순서 보장의 역할만 한다.
+	
+![image](https://user-images.githubusercontent.com/100178951/179711835-52a9dd6d-e1b9-43db-be9f-f70e5e7ad7e8.png)
+
+Web Layer
+> 흔히 사용하는 @Controller와 JSP/Freemarker 등의 뷰 템플릿 영역이다
+	
+> 필터(@Filter), 인터셉터, 컨트롤러 어드바이스(@ControllerAdvice)등 외부 요청과 응답에 대한 전반적인 영역을 이야기 한다.	
+
+Service Layer
+> @Service에 사용되는 서비스 영역이다.
+	
+> 일반적으로 Controller와 Dao의 중간 영역에서 사용된다
+	
+> @Transactional이 사용되어야 하는 영역이다	
 	
 	
 	참고자료 https://unit-15.tistory.com/149
