@@ -166,6 +166,19 @@ Service Layer
 	
 > @Transactional이 사용되어야 하는 영역이다	
 	
+>Repository Layer
+-> Database와 같이 데이터 저장소에 접근하는 영역
+
+>Dtos
+-> Dto(Data Transfer Obejct)는 계층 간에 데이터 교환을 위한 객체를 이야기 하며
+Dtos는 이들의 영역을 얘기함.
+
+>Domain Model
+-> 도메인이라 불리는 개발 대상을 모든 사람이 동일한 관점에서 이해할 수 있고 공유할 수 있도록 단순화시킨 것을 도메인 모델이라고 함.
+-> @Enitiy가 사용된 영역 역시 도메인 모델이다.	
+	
+
+	
 	
 	참고자료 https://unit-15.tistory.com/149
 	
