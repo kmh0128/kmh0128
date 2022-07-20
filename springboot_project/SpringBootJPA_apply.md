@@ -166,7 +166,7 @@ Service Layer
 	
 > @Transactional이 사용되어야 하는 영역이다	
 	
->Repository Layer
+Repository Layer
 -> Database와 같이 데이터 저장소에 접근하는 영역
 
 >Dtos
