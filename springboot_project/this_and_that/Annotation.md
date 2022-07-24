@@ -100,8 +100,11 @@ Spring의 대표적인 Annotation과 역할
 Spring은 해당 Annotation을 보고 Spring의 Bean으로 등록합니다.
 
 @Component(value="myman")
+
 public class Man {
+
     public Man() {
+    
         System.out.println("hi");
     }
 }
