@@ -90,6 +90,23 @@ IOC의 특징은 아래와 같습니다.
 >
 >즉, 사용자의 제어권을 다른 주체에게 넘기는 것을 IOC(제어의 역전) 라고 합니다.
 
+
+Spring의 대표적인 Annotation과 역할
+=============
+
+@Component
+개발자가 생성한 Class를 Spring의 Bean으로 등록할 때 사용하는 Annotation입니다. 
+
+Spring은 해당 Annotation을 보고 Spring의 Bean으로 등록합니다.
+
+@Component(value="myman")
+public class Man {
+    public Man() {
+        System.out.println("hi");
+    }
+}
+
+
  참조 -> https://bangu4.tistory.com/199
  
 https://melonicedlatte.com/2021/07/18/182600.html
