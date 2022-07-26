@@ -110,6 +110,12 @@ public class Man {
 }
 
 
+@ComponentScan
+
+Spring Framework는 @Component, @Service, @Repository, @Controller, @Configuration 중 1개라도 등록된 클래스를 찾으면, Context에 bean으로 등록합니다. 
+
+@ComponentScan Annotation이 있는 클래스의 하위 Bean을 등록 될 클래스들을 스캔하여 Bean으로 등록해줍니다.
+
  참조 -> https://bangu4.tistory.com/199
  
 https://melonicedlatte.com/2021/07/18/182600.html
