@@ -39,6 +39,15 @@ ORM 이란 Object-Relational Mapping 의 약자입니다.
 데이터를 잘 정규화해서 보관하는 것이 목표
 
 
+JPA
+===
+
+JPA는 Java Persistence API의 약자로, 자바 ORM 기술에 대한 API 표준 명세이다.
+
+즉, 인터페이스의 모음이다. 이러한 JPA 인터페이스를 구현한 대표적인 프레임워크가 하이버네이트(Hibernate)이다.
+
+JPA는 애플리케이션과 JDBC 사이에서 동작한다. 개발자가 JPA를 사용하면, JPA 내부에서 JDBC API를 사용하여 SQL을 호출하여 DB와 통신한다. 즉, 개발자가 직접 JDBC API를 쓸 필요가 없다.
+
 참조 자료 -> https://woonys.tistory.com/m/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%B4%EB%9E%80
 
 https://doing7.tistory.com/105
