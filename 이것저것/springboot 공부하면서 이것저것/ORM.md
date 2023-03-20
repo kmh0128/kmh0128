@@ -48,6 +48,16 @@ JPA는 Java Persistence API의 약자로, 자바 ORM 기술에 대한 API 표준
 
 JPA는 애플리케이션과 JDBC 사이에서 동작한다. 개발자가 JPA를 사용하면, JPA 내부에서 JDBC API를 사용하여 SQL을 호출하여 DB와 통신한다. 즉, 개발자가 직접 JDBC API를 쓸 필요가 없다.
 
+
+
+
+Hibernate
+===
+
+JPA를 구현한 프레임워크 중 사실상 표준이다.
+
+오픈소스 소프트웨어이며, 또한 JPA는 기술 스펙이고 하이버네이트는 이 기능을 구현하여 공급해주는 역할이다.
+
 참조 자료 -> https://woonys.tistory.com/m/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%B4%EB%9E%80
 
 https://doing7.tistory.com/105
