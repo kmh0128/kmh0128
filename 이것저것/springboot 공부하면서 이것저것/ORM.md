@@ -58,6 +58,10 @@ JPA를 구현한 프레임워크 중 사실상 표준이다.
 
 오픈소스 소프트웨어이며, 또한 JPA는 기술 스펙이고 하이버네이트는 이 기능을 구현하여 공급해주는 역할이다.
 
+Spring Data JPA
+===
+
+
 참조 자료 -> https://woonys.tistory.com/m/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%B4%EB%9E%80
 
 https://doing7.tistory.com/105
