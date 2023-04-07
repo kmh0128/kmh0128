@@ -61,6 +61,21 @@ JPA를 구현한 프레임워크 중 사실상 표준이다.
 Spring Data JPA
 ===
 
+ Spring framework에서 JPA를 편리하게 사용할 수 있도록 지원하는 프로젝트(모듈)이다. 
+ 
+ Spring Data JPA의 목적은 JPA를 사용할 때 필수적으로 생성해야하나, 예상가능하고 반복적인 코드들을 대신 작성해줘서 코드를 줄여주는 것이다.
+ 
+ 이는 JPA를 한 단계 추상화시킨 Repository라는 인터페이스를 제공함으로써 이루어진다.
+
+ Spring Data JPA는 JPA Provider이 아니다. 단지 데이터 계층에 접근하기 위해 필요한 뻔한 코드들의 사용을 줄여주도록 하는 인터페이스이다. 
+ 
+ 여기서 반드시 기억해야할 점은 Spring Data JPA는 항상 하이버네이트와 같은 JPA provider가 필요하다는 것이다.
+
+![다운로드 (12)](https://user-images.githubusercontent.com/100178951/230627719-036969df-763d-4c07-881a-ed171d4d3e64.png)
+
+출처 : 스프링부트와 aws로 혼자 구현하는 웹서비스(이동욱 저)
+
+
 
 참조 자료 -> https://woonys.tistory.com/m/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%B4%EB%9E%80
 
