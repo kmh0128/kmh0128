@@ -31,6 +31,9 @@ MVC 패턴에서는 주로 Client 와 Controller 사이에서 DTO 가 사용됩�
 
 Controller 에서 Client 로 리턴할 때는 UserDTO 에 매핑하여 리턴하는 것입니다.
 
+
+Entity 클래스란?
+===
  
 
 출처 -> https://comdolidol-i.tistory.com/367
