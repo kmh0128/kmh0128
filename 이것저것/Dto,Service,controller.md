@@ -35,6 +35,17 @@ Controller 에서 Client 로 리턴할 때는 UserDTO 에 매핑하여 리턴하
 Entity 클래스란?
 ===
  
+ domain package
+
+실제 DB의 테이블과 매칭될 클래스
+
+즉, 테이블과 링크될 클래스임을 나타낸다.
+
+Entity 클래스 또는 가장 Core한 클래스라고 부른다.
+
+@Entity, @Column, @Id 등을 이용
+
+
 
 출처 -> https://comdolidol-i.tistory.com/367
 
