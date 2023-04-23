@@ -20,3 +20,5 @@ Entity 클래스 또는 가장 Core한 클래스라고 부른다.
 참조: https://whitepro.tistory.com/265
 
 https://velog.io/@leyuri/Spring-boot-JPA-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-Entity-Table-Column-Id-Lombok
+
+https://gmlwjd9405.github.io/2018/12/25/difference-dao-dto-entity.html
