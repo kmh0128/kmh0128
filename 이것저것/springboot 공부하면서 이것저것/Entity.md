@@ -17,8 +17,13 @@ Entity 클래스 또는 가장 Core한 클래스라고 부른다.
 
 @Entity, @Column, @Id 등을 이용
 
+Entity Classs는 자바 클래스에 @Entity 어노테이션을 붙여, 테이블과 매핑한다고 JPA에게 알려주는 클래스다.
+그리고 엔티티 클래스에서 만들어진 객체를 엔티티라고 한다.
+
 참조: https://whitepro.tistory.com/265
 
 https://velog.io/@leyuri/Spring-boot-JPA-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-Entity-Table-Column-Id-Lombok
 
 https://gmlwjd9405.github.io/2018/12/25/difference-dao-dto-entity.html
+
+https://velog.io/@modsiw/JPAJava-Persistence-API%EC%9D%98-%EA%B0%9C%EB%85%90
