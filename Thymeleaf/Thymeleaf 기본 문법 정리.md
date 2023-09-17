@@ -25,6 +25,23 @@ JSP와 달리 ServletCode로 변환되지 않기 때문에 비즈니스 로직�
 
 서버상에서 동작하지 않아도 되기 때문에 서버 동작 없이 화면을 확인 할 수 있다.
 
+의존성 추가
+===
+
+타임리프 의존성 추가
+
+build.gradle 에 dependency 추가
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+타임리프를 적용할 HTML 문서에 네임스페이스 추가
+===
+
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+순수한 HTML으로만 작성된 페이지에는 선언하지 않아도 된다.
+
+th속성을 사용하기 위한 네임스페이스
 
 
 
