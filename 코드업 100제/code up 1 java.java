@@ -8,3 +8,4 @@ public class first {
 
 }
 //코드업 기초 100제 문제:https://codeup.kr/problemsetsol.php
+//헬로를 출력하는 문제
