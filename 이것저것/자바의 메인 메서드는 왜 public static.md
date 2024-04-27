@@ -1,4 +1,4 @@
-자바에서 메인(main) 메서드를 작성할 때 아래와 같이 public static void main을 붙여 작성한다.
+자바에서 메인(main) 메서드를 작성할 때 아래와 같이 public static void main (String[] args) 을 붙여 작성한다.
 
 왜 그럴까?
 
@@ -36,4 +36,8 @@ C언어와 마찬가지로 자바 언어에서도 main 메서드가 먼저 실�
 그렇기 때문에 static을 선언하여 메모리 할당(new)를 하지 않아도 사용할 수 있게 만든다. 
 특히나 main 메서드는 자바 가상 머신(JVM: Java Virtual Machine)에 의해 호출되기 때문에 반드시 static으로 선언되어 미리 로드되어 있어야 한다.**
 
-참고 https://madplay.github.io/post/java-main-method-structure
+참고 
+---
+https://madplay.github.io/post/java-main-method-structure
+
+https://mozi.tistory.com/553
