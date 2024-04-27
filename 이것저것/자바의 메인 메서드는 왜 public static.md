@@ -40,4 +40,6 @@ C언어와 마찬가지로 자바 언어에서도 main 메서드가 먼저 실�
 ---
 https://madplay.github.io/post/java-main-method-structure
 
+https://javacpro.tistory.com/11
+
 https://mozi.tistory.com/553
