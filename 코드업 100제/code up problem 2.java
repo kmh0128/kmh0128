@@ -10,3 +10,4 @@ public class seconcd {
 }
 
 //코드업 기초 100제 문제:https://codeup.kr/problemsetsol.php
+// Hello World 출력하는 문제
