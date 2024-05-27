@@ -10,6 +10,14 @@ public class cdu {
 }
 
 /*
+결과값
+
+Hello
+world
+
+*/
+
+/*
 문제 출처  https://codeup.kr/problemsetsol.php
 */
 
