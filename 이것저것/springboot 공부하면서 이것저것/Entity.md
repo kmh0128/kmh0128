@@ -1,7 +1,7 @@
 Entity(엔티티)
 ===
 
-JPA에서 엔티티란 쉽게 생각하면, DB 테이블에 대응하는 하나의 클래스라고 생각할 수 있습니다.
+ JPA에서 엔티티란 쉽게 생각하면, DB 테이블에 대응하는 하나의 클래스라고 생각할 수 있습니다.
 
  @Entity가 붙은 클래스는 JPA가 관리해주며, JPA를 사용해서 DB 테이블과 매핑할 클래스는 @Entity를 꼭 붙여야만 매핑이 가능합니다.
 
@@ -23,7 +23,9 @@ Entity Classs는 자바 클래스에 @Entity 어노테이션을 붙여, 테이�
 @Entity
 ===
 
-@Entity 어노테이션을 클래스에 선언하면 그 클래스는 JPA가 관리한다. 그러므로 DB의 테이블과 Class(VO, DTO)와 맵핑한다면 반드시 @Entity를 붙여주어야 한다.
+@Entity 어노테이션을 클래스에 선언하면 그 클래스는 JPA가 관리한다. 
+
+그러므로 DB의 테이블과 Class(VO, DTO)와 맵핑한다면 반드시 @Entity를 붙여주어야 한다.
 
 @Entity가 붙은 클래스에는 다음 제약사항이 필요하다.
 
@@ -34,6 +36,8 @@ Entity Classs는 자바 클래스에 @Entity 어노테이션을 붙여, 테이�
 @Entity의 속성
 
 1. name : 엔티티 이름을 지정합니다. 기본값으로 클래스 이름을 그대로 사용한다.
+
+2. column
 
 참조: https://whitepro.tistory.com/265
 
