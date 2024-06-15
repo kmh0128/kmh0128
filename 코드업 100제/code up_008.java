@@ -10,4 +10,5 @@ public class cdue {
 
 }
 //참고자료:https://memostack.tistory.com/108
-//코드업문제:https://codeup.kr/problem.php?id=1008
+
+//코드업 원본 문제:https://codeup.kr/problem.php?id=1008
