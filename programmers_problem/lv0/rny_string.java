@@ -12,3 +12,5 @@ char* solution(const char* rny_string) {
 
 //문제출처: 프로그래머스
 //https://school.programmers.co.kr/learn/courses/30/lessons/181863
+
+//참고 자료:https://keep-cool.tistory.com/12
