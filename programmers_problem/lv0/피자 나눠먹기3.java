@@ -1,6 +1,15 @@
+
 class Solution {
     public int solution(int slice, int n) {
-        int answer = 0;
+        int answer = 0;//인원수 나누기 조각수가 0이 떨어져야 한사람당 하나의 피자조각이 분배가 되기때문에 0으로 초기값 설정
+        if(n%slice == 0)
+        {
+            answer = n/slice;// 인원수하고 조각수를 나누어서 0이 되면통과, 부족하지않게 먹을 최소의 수
+        }
+        else {
+            answer = n/slice + 1;// 인원수하고 조각수를 나누어서 0이 되지 않는 결과 피자를 1판 더 추가
+        }
+
         return answer;
     }
 }
