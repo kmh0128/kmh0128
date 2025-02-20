@@ -6,7 +6,7 @@ class Solution {
         }else if (n % 7 == 0){//7로 나누어떨어지는 경우
             answer = n / 7 ;
         } else {
-            answer = n / 7 + 1;//그이엔 +1을 예외
+            answer = n / 7 + 1;//그외의 경우 +1을 예외
         }
         return answer;
     }
