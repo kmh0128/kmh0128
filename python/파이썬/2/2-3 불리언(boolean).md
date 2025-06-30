@@ -11,9 +11,12 @@ False: 거짓을 의미한다.
 
 True나 False는 파이썬의 예약어로, true, false와 같이 작성하면 안 되고 첫 문자를 항상 대문자로 작성해야 한다.
 
-![image](https://github.com/user-attachments/assets/4591c447-1920-404b-827e-23598521ad64)
 
-![image](https://github.com/user-attachments/assets/3953cca4-94e3-4085-a776-d2ef530c7afc)
+![불리언1](https://github.com/user-attachments/assets/7aa76b7c-aaf4-4666-99a9-26beb63cfdf8)
+
+![불리언22](https://github.com/user-attachments/assets/5196400f-08d1-4739-ad53-96823120b2cf)
+
+
 
 참고자료
 --
