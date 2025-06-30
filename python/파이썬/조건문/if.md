@@ -65,6 +65,9 @@ and, or, not
 
 ![image](https://github.com/user-attachments/assets/a2487a84-7240-431f-b6a8-0abbdc556231)
 
+![image](https://github.com/user-attachments/assets/c740c203-fa66-4c83-b7bb-bacadea2c615)
+
+
 
 참조자료
 ----
