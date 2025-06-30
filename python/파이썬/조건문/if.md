@@ -34,7 +34,36 @@ if 조건문 예시
 |x >= y|x가 y보다 크거나 같다.|
 |x <= y|x가 y보다 작거나 같다.|
 
+if문 예시
+--
 
+![image](https://github.com/user-attachments/assets/9790e956-702c-47b3-b1cd-a0bc417c7911)
+
+2번째는 참이 아니기때문에 성립이 안됨
+
+![image](https://github.com/user-attachments/assets/f8347d01-bac2-41e1-aa79-05f57c6bc705)
+
+and, or, not
+---
+
+|연산자|설명|
+|:---|:---|
+|x or y|x와 y 둘 중 하나만 참이어도 참이다.|
+|x and y|x와 y 모두 참이어야 참이다.|
+|not x|x가 거짓이면 참이다.|
+
+예시
+--
+
+![image](https://github.com/user-attachments/assets/74a66b29-40ff-4b1e-bdb8-23c34dcf05be)
+
+![image](https://github.com/user-attachments/assets/84c2de1b-e98b-4a94-989c-c870eff7c6f9)
+
+![image](https://github.com/user-attachments/assets/400aa8bb-dc93-4ff2-8da7-4f325c098643)
+
+![image](https://github.com/user-attachments/assets/a21b532d-6a83-4107-8d2e-c0acf0f46405)
+
+![image](https://github.com/user-attachments/assets/a2487a84-7240-431f-b6a8-0abbdc556231)
 
 
 참조자료
