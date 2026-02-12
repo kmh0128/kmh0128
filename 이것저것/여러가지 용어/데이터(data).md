@@ -10,6 +10,9 @@ https://www.ibm.com/kr-ko/think/topics/data#:~:text=%EB%8D%B0%EC%9D%B4%ED%84%B0%
 
 https://wikidocs.net/216447
 
+https://www.ibm.com/kr-ko/think/topics/data
+
+
 데이터란?
 ---
 
