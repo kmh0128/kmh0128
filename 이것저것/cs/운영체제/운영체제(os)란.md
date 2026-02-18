@@ -110,3 +110,5 @@ macOS : Apple사에서 개발한 운영체제로, mac 컴퓨터 및 노트북에
 https://yoonhs98.tistory.com/category/computer%20science?page=18
 
 https://jerryjerryjerry.tistory.com/171
+
+https://uiop5809.tistory.com/350
